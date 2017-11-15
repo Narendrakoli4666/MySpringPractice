@@ -8,10 +8,11 @@ public class Main {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationConfig.xml");
 		
-		Mobile mobile = context.getBean("oneplus",Mobile.class);
+		Oneplus mobile = context.getBean("oneplus", Oneplus.class);
 		
 		
 		mobile.getAndroidVersion();
+
 		
 	}
 
